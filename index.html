@@ -6,26 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Bootstrap dashboard</title>
 </head>
 
 <body>
     <!-- Nav -->
-        <nav class="navbar navbar-dark bg-dark">
-            <div class="container-fluid">
-                <img src="./img/duck.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark ">
+        <div class="container-fluid">
 
+            <!-- Img e lista nav -->
+            <img src="./img/duck.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Catalogo libri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Anagrafica utente</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Storico prestiti</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Help</a>
+                    </li>
+                </ul>
+            </div>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <!-- bottone nav -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            </div>
-            </div>
-            </div>
-        </nav>
+        </div>
+    </nav>
     <!-- /Nav -->
 
     <!-- Main -->
@@ -35,13 +54,11 @@
             <div class="row py-5">
                 <div class="col-6">
                     <h2>Catalogo Libri</h2>
-                  
                 </div>
                 <div class="col-6 text-end">
                     <button type="button" class="btn btn-primary">Aggiungi libro</button>
                 </div>
             </div>
-
             <!-- /Header main-->
 
             <!-- Tabella -->
@@ -49,83 +66,148 @@
                 <thead>
                     <tr>
                         <th scope="col">Titolo</th>
+                        <th scope="col" class="d-none d-md-inline-block">Data prestito</th>
                         <th scope="col">Stato</th>
-                        <th class=" d-none d-md-block" scope="col">Data prestito</th>
-                        <th scope="col">Azioni</th>
+                        <th class="text-center" scope="col">Azioni</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+                    <tr class="border">
                         <td scope="row">I pilastri della terra</td>
-                        <td>Mark</td>
-                        <td class=" d-none d-md-block">Otto</td>
-                        <td>@mdo</td>
+                        <td class=" py-4 d-none d-md-block">-</td>
+                        <td><button type="button" class=" btn btn-success btn-sm py-0">Disponibile</button></td>
+                        <td class="text-center text-nowrap">
+                            <button type="button" class=" btn btn-light border border-dark btn-sm py-0 "><i
+                                    class="fa-solid fa-trash" style="color: #7a7c7f;"></i></button>
+                            <button type="button" class="btn btn-light border border-dark btn-sm py-0"><i
+                                    class="fa-solid fa-pen" style="color: #7a7c7f;"></i></button>
+                        </td>
                     </tr>
                     <tr>
                         <td scope="row">I promessi sposi</td>
-                        <td>Jacob</td>
-                        <td class=" d-none d-md-block">Thornton</td>
-                        <td>@fat</td>
+                        <td class=" py-4 d-none d-md-block">-</td>
+                        <td><button type="button" class=" btn btn-success btn-sm py-0">Disponibile</button></td>
+                        <td class="text-center">
+                            <button type="button" class=" btn btn-light border border-dark btn-sm py-0 "><i
+                                    class="fa-solid fa-trash" style="color: #7a7c7f;"></i></button>
+                            <button type="button" class=" btn btn-light border border-dark btn-sm py-0 "><i
+                                    class="fa-solid fa-pen" style="color: #7a7c7f;"></i></button>
+                        </td>
+                    </tr>
+                    <tr class="border">
+                        <td scope="row">Il signore degli anelli</td>
+                        <td class=" py-4 d-none d-md-block">18/10/2023</td>
+                        <td><button type="button" class="btn btn-warning py-0  btn-sm text-white">In prestito</button>
+                        </td>
+                        <td class="text-center">
+                            <button type="button" class=" btn btn-light border border-dark btn-sm py-0 "><i
+                                    class="fa-solid fa-trash" style="color: #7a7c7f;"></i></button>
+                            <button type="button" class=" btn btn-light border border-dark btn-sm  py-0"><i
+                                    class="fa-solid fa-pen" style="color: #7a7c7f;"></i></button>
+                        </td>
                     </tr>
                     <tr>
-                        <td scope="row">3</td>
-                        <td >Larry</td>
-                        <td class=" d-none d-md-block">@twitter</td>
-                        <td>@fat</td>
+                        <td scope="row">Harry Potter e la pietra filosofale</td>
+                        <td class=" py-4 d-none d-md-block">-</td>
+                        <td><button type="button" class="btn btn-success py-0 btn-sm">Disponibile</button></td>
+                        <td class="text-center">
+                            <button type="button" class=" btn btn-light border border-dark btn-sm  py-0"><i
+                                    class="fa-solid fa-trash" style="color: #7a7c7f;"></i></button>
+                            <button type="button" class=" btn btn-light border border-dark btn-sm  py-0"><i
+                                    class="fa-solid fa-pen" style="color: #7a7c7f;"></i></button>
+                        </td>
+                    </tr>
+                    <tr class="border">
+                        <td scope="row">Il codice da vinci</td>
+                        <td class=" py-4 d-none d-md-block">-</td>
+                        <td><button type="button" class="btn btn-danger text-nowrap btn-sm py-0 ">Non
+                                disponibile</button></td>
+                        <td class="text-center">
+                            <button type="button" class=" btn btn-light border border-dark btn-sm py-0"><i
+                                    class="fa-solid fa-trash" style="color: #7a7c7f;"></i></button>
+                            <button type="button" class=" btn btn-light border border-dark btn-sm py-0"><i
+                                    class="fa-solid fa-pen" style="color: #7a7c7f;"></i></button>
+                        </td>
                     </tr>
                     <tr>
-                        <td scope="row">1</td>
-                        <td>Mark</td>
-                        <td class=" d-none d-md-block">Otto</td>
-                        <td>@mdo</td>
+                        <td scope="row">Shining</td>
+                        <td class=" py-4 d-none d-md-block">-</td>
+                        <td><button type="button" class="btn btn-success btn-sm py-0">Disponibile</button></td>
+                        <td class="text-center">
+                            <button type="button" class=" btn btn-light border border-dark btn-sm py-0 "><i
+                                    class="fa-solid fa-trash" style="color: #7a7c7f;"></i></button>
+                            <button type="button" class=" btn btn-light border border-dark btn-sm  py-0"><i
+                                    class="fa-solid fa-pen" style="color: #7a7c7f;"></i></button>
+                        </td>
+                    </tr>
+                    <tr class="border">
+                        <td scope="row">La divina commedia</td>
+                        <td class=" py-4 d-none d-md-block">21/09/2023</td>
+                        <td><button type="button" class="btn btn-warning btn-sm py-0 text-white">In prestito</button>
+                        </td>
+                        <td class="text-center">
+                            <button type="button" class=" btn btn-light border border-dark btn-sm py-0 "><i
+                                    class="fa-solid fa-trash" style="color: #7a7c7f;"></i></button>
+                            <button type="button" class=" btn btn-light border border-dark btn-sm  py-0"><i
+                                    class="fa-solid fa-pen" style="color: #7a7c7f;"></i></button>
+                        </td>
                     </tr>
                     <tr>
-                        <td scope="row">1</td>
-                        <td>Mark</td>
-                        <td class=" d-none d-md-block">Otto</td>
-                        <td>@mdo</td>
+                        <td scope="row">Il trono di spade</td>
+                        <td class=" py-4 d-none d-md-block">-</td>
+                        <td><button type="button" class="btn btn-success btn-sm py-0">Disponibile</button></td>
+                        <td class="text-center">
+                            <button type="button" class=" btn btn-light border border-dark btn-sm  py-0"><i
+                                    class="fa-solid fa-trash" style="color: #7a7c7f;"></i></button>
+                            <button type="button" class=" btn btn-light border border-dark btn-sm  py-0"><i
+                                    class="fa-solid fa-pen" style="color: #7a7c7f;"></i></button>
+                        </td>
+                    </tr>
+                    <tr class="border">
+                        <td scope="row">Il mondo di Sofia</td>
+                        <td class=" py-4 d-none d-md-block">-</td>
+                        <td><button type="button" class="btn btn-danger text-nowrap btn-sm py-0">Non
+                                disponibile</button></td>
+                        <td class="text-center">
+                            <button type="button" class=" btn btn-light border border-dark btn-sm py-0"><i
+                                    class="fa-solid fa-trash" style="color: #7a7c7f;"></i></button>
+                            <button type="button" class=" btn btn-light border border-dark btn-sm py-0"><i
+                                    class="fa-solid fa-pen" style="color: #7a7c7f;"></i></button>
+                        </td>
                     </tr>
                     <tr>
-                        <td scope="row">1</td>
-                        <td>Mark</td>
-                        <td class=" d-none d-md-block">Otto</td>
-                        <td>@mdo</td>
+                        <td scope="row">Le cronache di Narnia: il leone, la strega e l'armadio</td>
+                        <td class=" py-4 d-none d-md-block">27/07/2023</td>
+                        <td><button type="button" class="btn btn-warning btn-sm py-0 text-white">In prestito</button>
+                        </td>
+                        <td class="text-center"><button type="button"
+                                class=" btn btn-light border border-dark btn-sm py-0"><i class="fa-solid fa-trash"
+                                    style="color: #7a7c7f;"></i></button>
+                            <button type="button" class=" btn btn-light border border-dark btn-sm py-0"><i
+                                    class="fa-solid fa-pen" style="color: #7a7c7f;"></i></button>
+                        </td>
+                    </tr>
+                    <tr class="border">
+                        <td scope="row">Il piccolo principe</td>
+                        <td class=" py-4 d-none d-md-block">-</td>
+                        <td><button type="button" class="btn btn-success btn-sm py-0">Disponibile</button></td>
+                        <td class="text-center">
+                            <button type="button" class=" btn btn-light border border-dark btn-sm py-0"><i
+                                    class="fa-solid fa-trash" style="color: #7a7c7f;"></i></button>
+                            <button type="button" class=" btn btn-light border border-dark btn-sm py-0"><i
+                                    class="fa-solid fa-pen" style="color: #7a7c7f;"></i></button>
+                        </td>
                     </tr>
                     <tr>
-                        <td scope="row">1</td>
-                        <td>Mark</td>
-                        <td class=" d-none d-md-block">Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">1</td>
-                        <td>Mark</td>
-                        <td class=" d-none d-md-block">Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">1</td>
-                        <td>Mark</td>
-                        <td class=" d-none d-md-block">Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">1</td>
-                        <td>Mark</td>
-                        <td class=" d-none d-md-block">Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">1</td>
-                        <td>Mark</td>
-                        <td class=" d-none d-md-block">Otto</td>
-                        <td>@mdo</td>
-                    </tr>
-                    <tr>
-                        <td scope="row">1</td>
-                        <td>Mark</td>
-                        <td class=" d-none d-md-block">Otto</td>
-                        <td>@mdo</td>
+                        <td scope="row">La storia infinita</td>
+                        <td class=" py-4 d-none d-md-block">-</td>
+                        <td><button type="button" class="btn btn-success btn-sm py-0">Disponibile</button></td>
+                        <td class="text-center">
+                            <button type="button" class=" btn btn-light border border-dark btn-sm py-0"><i
+                                    class="fa-solid fa-trash" style="color: #7a7c7f;"></i></button>
+                            <button type="button" class=" btn-light border border-dark btn-sm py-0"><i
+                                    class="fa-solid fa-pen" style="color: #7a7c7f;"></i></button>
+                        </td>
                     </tr>
                 </tbody>
             </table>
