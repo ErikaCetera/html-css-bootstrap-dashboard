@@ -56,65 +56,113 @@
                 <div class="col-6">
                     <h2>Nuovo Libro</h2>
                 </div>
-                <!-- /Header-main -->
-
-                <!-- Griglia-Form -->
-                <form action="">
-
-                    <section>
-                        <!-- Nome Autore -->
-                        <div class="row pt-5 ">
-                            <div class="col-6">
-                                <label for="author-name" class="py-1">
-                                    <h5>Nome Autore</h5>
-                                </label>
-                                <input class="form-control form-control-lg" type="text" id="author-name"
-                                    placeholder="Inserisci il nome dell'autore">
-                            </div>
-
-                            <!-- Cognome Autore -->
-                            <div class="col-6">
-                                <label for="author-surname" class="py-1">
-                                    <h5>Cognome Autore</h5>
-                                </label>
-                                <input class="form-control form-control-lg" type="text" id="author-surname"
-                                    placeholder="Inserisci il cognome dell'autore">
-                            </div>
-
-                            <!-- Titolo libro -->
-                            <div class="col-12 pt-3">
-                                <label for="title-book" class="py-1">
-                                    <h5>Titolo</h5>
-                                </label>
-                                <input class="form-control form-control-lg" type="text" id="title-book"
-                                    placeholder="Inserisci il titolo del libro" aria-describedby="version-book">
-                                <div id="version-book" class="form-text">
-                                    Titolo versione italiana
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section>
-                        <div class="row py-5">
-                            <div class="col-12 col-lg-4"></div>
-                            <div class="col-12 col-lg-4"></div>
-                            <div class="col-12 col-lg-4"></div>
-                        </div>
-                        <hr>
-                    </section>
-
-                    <section>
-                        <div class="row py-5">
-                            <div class="col-12"></div>
-                            <div class="col-12"></div>
-                            <div class="col-12"></div>
-                        </div>
-                    </section>
-                    
-                </form>
-                <!-- /Griglia-Form -->
             </div>
+            <!-- /Header-main -->
+
+            <!-- Griglia-Form -->
+            <form action="">
+
+                <section>
+                    <div class="row mt-4 ">
+
+                        <!-- Nome Autore -->
+                        <div class="col-6">
+                            <label for="author-name" class="py-1 form-label">
+                                <h5>Nome Autore</h5>
+                            </label>
+                            <input class="form-control form-control-lg" type="text" id="author-name"
+                                placeholder="Inserisci il nome dell'autore">
+                        </div>
+
+                        <!-- Cognome Autore -->
+                        <div class="col-6">
+                            <label for="author-surname" class="py-1 form-label">
+                                <h5>Cognome Autore</h5>
+                            </label>
+                            <input class="form-control form-control-lg" type="text" id="author-surname"
+                                placeholder="Inserisci il cognome dell'autore">
+                        </div>
+
+                        <!-- Titolo libro -->
+                        <div class="col-12 pt-3">
+                            <label for="title-book" class="py-1 form-label">
+                                <h5>Titolo</h5>
+                            </label>
+                            <input class="form-control form-control-lg" type="text" id="title-book"
+                                placeholder="Inserisci il titolo del libro" aria-describedby="version-book">
+                            <div id="version-book" class="form-text">
+                                Titolo versione italiana
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="border-bottom">
+                    <div class="row my-4">
+
+                        <!-- Genere -->
+                        <div class="col-12 col-lg-4 pt-3">
+                            <label for="category" class="py-1 form-label">
+                                <h5>Genere</h5>
+                            </label>
+                            <select name="" class="form-select form-select-lg mb-3" id="category">
+                                <option selected> Scegli il Genere</option>
+                                <option value="">Romanzo</option>
+                                <option value="">Giallo</option>
+                                <option value="">Fantasy</option>
+                                <option value="">Horror</option>
+                                <option value="">Avventura</option>
+                                <option value="">Storico</option>
+                                <option value="">Autobiografia</option>
+                            </select>
+                        </div>
+
+
+
+                        <!-- Anno -->
+                        <div class="col-12 col-lg-4 pt-3">
+                            <label for="publication" class=" py-1 form-label ">
+                                <h5>Anno di Pubblicazione</h5>
+                            </label>
+                            <input type="number" min="1800" max="2024" maxlength="4"
+                                class="form-control form-control-lg" placeholder="Inserisci l'anno" id="publication">
+                        </div>
+
+                        <!-- Codice -->
+                        <div class="col-12 col-lg-4 pt-3">
+                            <label for="code" class=" py-1 form-label ">
+                                <h5>ISBN#</h5>
+                            </label>
+                            <input type="number" class="form-control form-control-lg" placeholder="Inserisci il codice"
+                                id="code">
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="row mt-4">
+
+                        <div class="col-12 pt-3">
+
+
+                        </div>
+
+
+                        <div class="col-12 pt-3">
+
+                        </div>
+
+
+                        <div class="col-12 pt-3">
+
+                        </div>
+
+                    </div>
+                </section>
+
+            </form>
+            <!-- /Griglia-Form -->
+        </div>
     </main>
     <!-- /Main -->
 </body>
