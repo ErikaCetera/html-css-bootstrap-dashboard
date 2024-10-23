@@ -52,36 +52,69 @@
         <div class="container pt-5">
 
             <!-- Header-main -->
-                <div class="row pt-5 ">
-                    <div class="col-6">
-                        <h2>Nuovo Libro</h2>
-                    </div>
-            <!-- /Header-main -->
-
-             <!-- Griglia-Form -->
-            <form action="">
-
-                <div class="row">
-                    <div class="col-6"></div>
-                    <div class="col-6"></div>
-                    <div class="col-12"></div>
+            <div class="row pt-5 ">
+                <div class="col-6">
+                    <h2>Nuovo Libro</h2>
                 </div>
+                <!-- /Header-main -->
 
-                <div class="row">
-                    <div class="col-12 col-lg-4"></div>
-                    <div class="col-12 col-lg-4"></div>
-                    <div class="col-12 col-lg-4"></div>
-                </div>
-                <hr>
+                <!-- Griglia-Form -->
+                <form action="">
 
-                <div class="row">
-                    <div class="col-12"></div>
-                    <div class="col-12"></div>
-                    <div class="col-12"></div>
-                </div>
-            </form>
-            <!-- /Griglia-Form -->
-        </div>
+                    <section>
+                        <!-- Nome Autore -->
+                        <div class="row pt-5 ">
+                            <div class="col-6">
+                                <label for="author-name" class="py-1">
+                                    <h5>Nome Autore</h5>
+                                </label>
+                                <input class="form-control form-control-lg" type="text" id="author-name"
+                                    placeholder="Inserisci il nome dell'autore">
+                            </div>
+
+                            <!-- Cognome Autore -->
+                            <div class="col-6">
+                                <label for="author-surname" class="py-1">
+                                    <h5>Cognome Autore</h5>
+                                </label>
+                                <input class="form-control form-control-lg" type="text" id="author-surname"
+                                    placeholder="Inserisci il cognome dell'autore">
+                            </div>
+
+                            <!-- Titolo libro -->
+                            <div class="col-12 pt-3">
+                                <label for="title-book" class="py-1">
+                                    <h5>Titolo</h5>
+                                </label>
+                                <input class="form-control form-control-lg" type="text" id="title-book"
+                                    placeholder="Inserisci il titolo del libro" aria-describedby="version-book">
+                                <div id="version-book" class="form-text">
+                                    Titolo versione italiana
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="row py-5">
+                            <div class="col-12 col-lg-4"></div>
+                            <div class="col-12 col-lg-4"></div>
+                            <div class="col-12 col-lg-4"></div>
+                        </div>
+                        <hr>
+                    </section>
+
+                    <section>
+                        <div class="row py-5">
+                            <div class="col-12"></div>
+                            <div class="col-12"></div>
+                            <div class="col-12"></div>
+                        </div>
+                    </section>
+                    
+                </form>
+                <!-- /Griglia-Form -->
+            </div>
     </main>
     <!-- /Main -->
 </body>
