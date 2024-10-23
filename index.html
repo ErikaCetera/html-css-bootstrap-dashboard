@@ -14,7 +14,7 @@
 
 <body>
     <!-- Nav -->
-    <nav class="navbar navbar-dark navbar-expand-lg bg-dark ">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark fixed-top">
         <div class="container-fluid">
 
             <!-- Img e lista nav -->
@@ -22,7 +22,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Catalogo libri</a>
+                        <a class="nav-link active" aria-current="page" href="./index.html">Catalogo libri</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Anagrafica utente</a>
@@ -50,13 +50,13 @@
     <!-- Main -->
     <main>
         <!-- Header main -->
-        <div class="container ">
-            <div class="row py-5">
+        <div class="container pt-5">
+            <div class="row pt-5 ">
                 <div class="col-6">
                     <h2>Catalogo Libri</h2>
                 </div>
                 <div class="col-6 text-end">
-                    <button type="button" class="btn btn-primary">Aggiungi libro</button>
+                    <a href="./new-book.html"><button type="button" class="btn btn-primary">Aggiungi libro</button></a>
                 </div>
             </div>
             <!-- /Header main-->
@@ -66,7 +66,7 @@
                 <thead>
                     <tr>
                         <th scope="col">Titolo</th>
-                        <th scope="col" class="d-none d-md-inline-block">Data prestito</th>
+                        <th scope="col" class="d-none d-md-table-cell">Data prestito</th>
                         <th scope="col">Stato</th>
                         <th class="text-center" scope="col">Azioni</th>
                     </tr>
@@ -74,7 +74,7 @@
                 <tbody>
                     <tr class="border">
                         <td scope="row">I pilastri della terra</td>
-                        <td class=" py-4 d-none d-md-block">-</td>
+                        <td class=" py-4 d-none d-md-table-cell">-</td>
                         <td><button type="button" class=" btn btn-success btn-sm py-0">Disponibile</button></td>
                         <td class="text-center text-nowrap">
                             <button type="button" class=" btn btn-light border border-dark btn-sm py-0 "><i
@@ -85,7 +85,7 @@
                     </tr>
                     <tr>
                         <td scope="row">I promessi sposi</td>
-                        <td class=" py-4 d-none d-md-block">-</td>
+                        <td class=" py-4 d-none d-md-table-cell">-</td>
                         <td><button type="button" class=" btn btn-success btn-sm py-0">Disponibile</button></td>
                         <td class="text-center">
                             <button type="button" class=" btn btn-light border border-dark btn-sm py-0 "><i
@@ -96,7 +96,7 @@
                     </tr>
                     <tr class="border">
                         <td scope="row">Il signore degli anelli</td>
-                        <td class=" py-4 d-none d-md-block">18/10/2023</td>
+                        <td class=" py-4 d-none d-md-table-cell">18/10/2023</td>
                         <td><button type="button" class="btn btn-warning py-0  btn-sm text-white">In prestito</button>
                         </td>
                         <td class="text-center">
@@ -108,7 +108,7 @@
                     </tr>
                     <tr>
                         <td scope="row">Harry Potter e la pietra filosofale</td>
-                        <td class=" py-4 d-none d-md-block">-</td>
+                        <td class=" py-4 d-none d-md-table-cell">-</td>
                         <td><button type="button" class="btn btn-success py-0 btn-sm">Disponibile</button></td>
                         <td class="text-center">
                             <button type="button" class=" btn btn-light border border-dark btn-sm  py-0"><i
@@ -119,7 +119,7 @@
                     </tr>
                     <tr class="border">
                         <td scope="row">Il codice da vinci</td>
-                        <td class=" py-4 d-none d-md-block">-</td>
+                        <td class=" py-4 d-none d-md-table-cell">-</td>
                         <td><button type="button" class="btn btn-danger text-nowrap btn-sm py-0 ">Non
                                 disponibile</button></td>
                         <td class="text-center">
@@ -131,7 +131,7 @@
                     </tr>
                     <tr>
                         <td scope="row">Shining</td>
-                        <td class=" py-4 d-none d-md-block">-</td>
+                        <td class=" py-4 d-none d-md-table-cell">-</td>
                         <td><button type="button" class="btn btn-success btn-sm py-0">Disponibile</button></td>
                         <td class="text-center">
                             <button type="button" class=" btn btn-light border border-dark btn-sm py-0 "><i
@@ -142,7 +142,7 @@
                     </tr>
                     <tr class="border">
                         <td scope="row">La divina commedia</td>
-                        <td class=" py-4 d-none d-md-block">21/09/2023</td>
+                        <td class=" py-4 d-none d-md-table-cell">21/09/2023</td>
                         <td><button type="button" class="btn btn-warning btn-sm py-0 text-white">In prestito</button>
                         </td>
                         <td class="text-center">
@@ -154,7 +154,7 @@
                     </tr>
                     <tr>
                         <td scope="row">Il trono di spade</td>
-                        <td class=" py-4 d-none d-md-block">-</td>
+                        <td class=" py-4 d-none d-md-table-cell">-</td>
                         <td><button type="button" class="btn btn-success btn-sm py-0">Disponibile</button></td>
                         <td class="text-center">
                             <button type="button" class=" btn btn-light border border-dark btn-sm  py-0"><i
@@ -165,7 +165,7 @@
                     </tr>
                     <tr class="border">
                         <td scope="row">Il mondo di Sofia</td>
-                        <td class=" py-4 d-none d-md-block">-</td>
+                        <td class=" py-4 d-none d-md-table-cell">-</td>
                         <td><button type="button" class="btn btn-danger text-nowrap btn-sm py-0">Non
                                 disponibile</button></td>
                         <td class="text-center">
@@ -177,7 +177,7 @@
                     </tr>
                     <tr>
                         <td scope="row">Le cronache di Narnia: il leone, la strega e l'armadio</td>
-                        <td class=" py-4 d-none d-md-block">27/07/2023</td>
+                        <td class=" py-4 d-none d-md-table-cell">27/07/2023</td>
                         <td><button type="button" class="btn btn-warning btn-sm py-0 text-white">In prestito</button>
                         </td>
                         <td class="text-center"><button type="button"
@@ -189,7 +189,7 @@
                     </tr>
                     <tr class="border">
                         <td scope="row">Il piccolo principe</td>
-                        <td class=" py-4 d-none d-md-block">-</td>
+                        <td class=" py-4 d-none d-md-table-cell">-</td>
                         <td><button type="button" class="btn btn-success btn-sm py-0">Disponibile</button></td>
                         <td class="text-center">
                             <button type="button" class=" btn btn-light border border-dark btn-sm py-0"><i
@@ -200,7 +200,7 @@
                     </tr>
                     <tr>
                         <td scope="row">La storia infinita</td>
-                        <td class=" py-4 d-none d-md-block">-</td>
+                        <td class=" py-4 d-none d-md-table-cell">-</td>
                         <td><button type="button" class="btn btn-success btn-sm py-0">Disponibile</button></td>
                         <td class="text-center">
                             <button type="button" class=" btn btn-light border border-dark btn-sm py-0"><i
